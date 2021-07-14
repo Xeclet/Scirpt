@@ -2791,28 +2791,70 @@ tab:Slider("JumpPower","Make jump power if you jump", 0, 500, 65, function(t)
 end)
 
 
-tab:Dropdown("Teleport",{"Enchanted Island","Astral Island","Mystical Island","Space Island","Tundra Island","Eternal Island","Sandstorm Island","Thunderstorm Island","Ancient Inferno Island","Midnight Shadow Island","Mythical Souls Island","Winter Wonder Island","Golden Master Island","Dragon Legend Island","Cybernetic Legends Island","Skystorm Ultraus Island","Chaos Legends Island","Soul Fusion Island","Dark Elements Island","Inner Peace Island",}, function()
-
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(51.2420082, 849.832031, -151.813995)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(216.321625, 2095.47778, 256.276184)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(184.796295, 4124.17773, 45.8520508)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(138.522156, 5847.19336, 123.56015)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(145.131607, 9372.39746, 90.3484344)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(145.131607, 13767.251, 90.3484344)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(145.131607, 17773.5469, 90.3484344)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(145.131607, 24157.2402, 90.3484344)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(144.021057, 28364.6953, 88.9619141)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(144.021057, 33315.3867, 88.9619141)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(144.021057, 39425.9766, 88.9619141)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(144.021057, 46118.9609, 88.9619141)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(144.021057, 52716.168, 88.9619141)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(144.021057, 59703.0859, 88.9619141)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(144.021057, 66777.5781, 88.9619141)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(144.021057, 70379.5703, 88.9619141)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(144.021057, 74551.2656, 88.9619141)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(144.021057, 79855.3984, 88.9619141)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(144.021057, 83307.3984, 88.9619141)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(144.021057, 87159.4844, 88.9619141)
+tab:Dropdown,("Teleport",{"Enchanted Island","Astral Island","Mystical Island","Space Island","Tundra Island","Eternal Island","Sandstorm Island","Thunderstorm Island","Ancient Inferno Island","Midnight Shadow Island","Mythical Souls Island","Winter Wonder Island","Golden Master Island","Dragon Legend Island","Cybernetic Legends Island","Skystorm Ultraus Island","Chaos Legends Island","Soul Fusion Island","Dark Elements Island","Inner Peace Island",}, function(t)
+if t == "Enchanted Island" then
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(51.2420082, 849.832031, -151.813995)
+end	
+if t == "Astral Island" then
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(51.2420082, 849.832031, -151.813995)
+end
+if t == "Astral Island" then
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(216.321625, 2095.47778, 256.276184)
+end
+if t == "Mystical Island" then
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(184.796295, 4124.17773, 45.8520508)
+end
+if t == "Space Island" then
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(138.522156, 5847.19336, 123.56015)
+end
+if t == "Tundra Island" then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(145.131607, 9372.39746, 90.3484344)
+end
+if t == "Eternal Island" then
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(145.131607, 13767.251, 90.3484344)
+end
+if t == "Sandstorm Island" then
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(145.131607, 17773.5469, 90.3484344)
+end
+if t == "Thunderstorm Island" then
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(145.131607, 24157.2402, 90.3484344)
+end
+if t == "Ancient Inferno Island" then
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(144.021057, 28364.6953, 88.9619141)
+end
+if t == "Midnight Shadow Island" then
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(144.021057, 33315.3867, 88.9619141)
+end
+if t == "Mythical Souls Island" then
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(144.021057, 39425.9766, 88.9619141)
+end
+if t == "Winter Wonder Island" then
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(144.021057, 46118.9609, 88.9619141)
+end
+if t == "Golden Master Island" then
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(144.021057, 52716.168, 88.9619141)
+end
+if t == "Dragon Legend Island" then
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(144.021057, 59703.0859, 88.9619141)
+end
+if t == "Cybernetic Legends Island" then
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(144.021057, 66777.5781, 88.9619141)
+end
+if t == "Skystorm Ultraus Island" then
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(144.021057, 70379.5703, 88.9619141)
+end
+if t == "Chaos Legends Island" then
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(144.021057, 74551.2656, 88.9619141)
+end
+if t == "Soul Fusion Island" then
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(144.021057, 79855.3984, 88.9619141)
+end
+if t == "Dark Elements Island" then
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(144.021057, 83307.3984, 88.9619141)
+end
+if t == "Inner Peace Island" then
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(144.021057, 87159.4844, 88.9619141)
+end
 end)
 
 tab:Button("Destroy", "Just destroys the gui, nothing else.", function()
