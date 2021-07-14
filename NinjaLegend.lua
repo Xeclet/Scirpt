@@ -2791,7 +2791,7 @@ tab:Slider("JumpPower","Make jump power if you jump", 0, 500, 65, function(t)
 end)
 
 
-tab:Dropdown,("Teleport",{"Enchanted Island","Astral Island","Mystical Island","Space Island","Tundra Island","Eternal Island","Sandstorm Island","Thunderstorm Island","Ancient Inferno Island","Midnight Shadow Island","Mythical Souls Island","Winter Wonder Island","Golden Master Island","Dragon Legend Island","Cybernetic Legends Island","Skystorm Ultraus Island","Chaos Legends Island","Soul Fusion Island","Dark Elements Island","Inner Peace Island",}, function(t)
+tab:Dropdown("Teleport",{"Enchanted Island","Astral Island","Mystical Island","Space Island","Tundra Island","Eternal Island","Sandstorm Island","Thunderstorm Island","Ancient Inferno Island","Midnight Shadow Island","Mythical Souls Island","Winter Wonder Island","Golden Master Island","Dragon Legend Island","Cybernetic Legends Island","Skystorm Ultraus Island","Chaos Legends Island","Soul Fusion Island","Dark Elements Island","Inner Peace Island",}, function(t)
 if t == "Enchanted Island" then
 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(51.2420082, 849.832031, -151.813995)
 end	
