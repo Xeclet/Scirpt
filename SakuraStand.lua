@@ -2759,73 +2759,135 @@ function Flux:Window(text, bottom,mainclr,toclose)
 end
 
 local win = Flux:Window("SakuraStand", "SecretHub", Color3.fromRGB(247, 0, 255 ), Enum.KeyCode.LeftControl)
-local tab = win:Tab("Farm", "http://www.roblox.com/asset/?id=6023426915")
+local tab = win:Tab("main", "http://www.roblox.com/asset/?id=6023426915")
 
+_G.on = false
 tab:Toggle("Auto-Stand", "Automatically give stand aroud floor to you!", false, function(t)
-local args = {
-    CFrame.new(1345.71399, -56.3849678, -19.193985),
-    CFrame.new(988.098022, -55.7086487, -154.307281),
-    CFrame.new(1114.5575, -56.3963432, 272.563232),
-    CFrame.new(1114.26965, -55.8119469, -66.9433136),
-    CFrame.new(982.248535, -56.3001289, 139.595932),
-    CFrame.new(1220.35632, -56.2975082, -159.065689),
-    CFrame.new(1234.78589, -55.9762459, 19.6592941),
-    CFrame.new(1133.30017, -56.221096, -456.424072),
-    CFrame.new(873.633423, -56.7165031, -66.6995163),
-    CFrame.new(1345.71399, -56.3849678, 207.033783),
-    CFrame.new(1345.71399, -56.3849678, 618.560425),
-    CFrame.new(1234.78589, -55.9762459, 269.749298),
-    CFrame.new(1222.79749, -41.353363, 422.396301),
-    CFrame.new(979.936646, -56.3849678, 618.560425),
-    CFrame.new(979.936646, -56.3849678, 400.462006),
-    CFrame.new(1132.97205, -56.3849678, 344.840057),
-    CFrame.new(831.470947, -56.3849678, 134.079407),
-    CFrame.new(1098.39465, -56.3849678, 148.784439),
-    CFrame.new(831.470947, -56.3849678, 445.03186),
-    CFrame.new(470.141113, -56.3849678, 445.03186),
-    CFrame.new(470.141113, -56.3849678, 168.780884),
-    CFrame.new(470.141113, -56.3849678, -274.892639),
-    CFrame.new(694.581787, -56.3849678, -272.870972),
-    CFrame.new(855.828125, -56.3849678, -272.720642),
-    CFrame.new(1239.15051, -56.3849678, -274.892639),
-    CFrame.new(985.455688, -56.3849678, -375.9646),
-    CFrame.new(1149.22742, -56.3849678, -533.411255),
-    CFrame.new(982.248535, -56.3001289, 20.5587311),
-    CFrame.new(639.175781, -56.3001289, 267.385132),
-    CFrame.new(652.974121, -56.3001289, 63.9129486),
-    CFrame.new(645.335327, -56.3001289, -56.0065002),
-    CFrame.new(571.402954, -56.3001289, -157.32431),
-    CFrame.new(586.638428, -56.3001289, 96.3369598),
-    CFrame.new(804.735718, -56.3001289, -157.152695),
-    CFrame.new(574.854614, -56.3849678, 344.744354),
-    CFrame.new(556.256226, -56.3849678, -374.202393),
-    CFrame.new(834.470703, -56.3849678, -374.202393),
-    CFrame.new(866.616577, -53.7983208, -535.652405),
-    CFrame.new(1345.77759, -56.3849678, -375.9646),
-}
-
-_G.root = game:GetService("Players").LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
-
-_G.on = t
-if _G.on == false then return end
-while _G.on do wait()
-
-for i,v in pairs(args) do
-    repeat wait()
-        _G.root.CFrame = args[i]
-        wait(4)
-    until _G.on == false
-
-end
+if t then
+_G.on = true
+else
+_G.on = false
 end
 end)
 
-tab:Toggle("Auto-Sell Ninjitsu", "Automatically Sell Ninjitsu for you!", false, function(t)
- _G.on = t
-if _G.on == false then return end   
-while _G.on do
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(81.2580261, 87050.2344, 126.265594)
-wait()
+spawn(function()
+    while wait() do
+        if _G.on then
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1345.71399, -56.3849678, -19.193985),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(988.098022, -55.7086487, -154.307281),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1114.5575, -56.3963432, 272.563232),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1114.26965, -55.8119469, -66.9433136),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(982.248535, -56.3001289, 139.595932),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1220.35632, -56.2975082, -159.065689),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1234.78589, -55.9762459, 19.6592941),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1133.30017, -56.221096, -456.424072),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(873.633423, -56.7165031, -66.6995163),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1345.71399, -56.3849678, 207.033783),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1345.71399, -56.3849678, 618.560425),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1234.78589, -55.9762459, 269.749298),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1222.79749, -41.353363, 422.396301),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(979.936646, -56.3849678, 618.560425),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(979.936646, -56.3849678, 400.462006),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1132.97205, -56.3849678, 344.840057),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(831.470947, -56.3849678, 134.079407),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1098.39465, -56.3849678, 148.784439),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(831.470947, -56.3849678, 445.03186),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(470.141113, -56.3849678, 445.03186),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(470.141113, -56.3849678, 168.780884),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(470.141113, -56.3849678, -274.892639),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(694.581787, -56.3849678, -272.870972),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(855.828125, -56.3849678, -272.720642),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1239.15051, -56.3849678, -274.892639),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(985.455688, -56.3849678, -375.9646),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1149.22742, -56.3849678, -533.411255),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(982.248535, -56.3001289, 20.5587311),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(639.175781, -56.3001289, 267.385132),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(652.974121, -56.3001289, 63.9129486),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(645.335327, -56.3001289, -56.0065002),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(571.402954, -56.3001289, -157.32431),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(586.638428, -56.3001289, 96.3369598),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(804.735718, -56.3001289, -157.152695),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =CFrame.new(574.854614, -56.3849678, 344.744354),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(556.256226, -56.3849678, -374.202393),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(834.470703, -56.3849678, -374.202393),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(866.616577, -53.7983208, -535.652405),
+        wait(1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1345.77759, -56.3849678, -375.9646),
+        wait(1)
+        end
+        end
+    end)
+
+_G.on = false
+tab:Toggle("Auto-Stand", "Automatically give stand aroud floor to you!", false, function(t)
+if t then
+_G.on = true
+else
+_G.on = false
+end
+end)
+
+spawn(function()
+    while wait() do
+        if _G.on then           
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(906.119507, -58.5440445, 391.546967)
+wait(1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(856.783813, -58.5625801, 221.682434)
+wait(1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(852.361938, -58.7723427, 246.382095)
+wait(1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(901.981934, -56.2185402, 244.478775)
+wait(1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(962.629272, -58.7795029, 255.183594)
+wait(1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(880.115112, -58.7224808, 195.678391)
+wait(1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(895.456665, -58.5604973, 264.655762)
+wait(1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(927.032471, -53.6883163, 197.141525)
+wait(1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(862.843872, -54.8723106, 324.234894)
+wait(1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(941.739868, -58.6111069, 362.681549)
+wait(1)
+end
 end
 end)
 
