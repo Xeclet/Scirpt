@@ -2856,7 +2856,7 @@ spawn(function()
     end)
 
 _G.on = false
-tab:Toggle("Auto-Stand", "Automatically give stand aroud floor to you!", false, function(t)
+tab:Toggle("Auto-Money", "Automatically give money aroud floor to you!", false, function(t)
 if t then
 _G.on = true
 else
