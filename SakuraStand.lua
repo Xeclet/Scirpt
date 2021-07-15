@@ -2762,7 +2762,7 @@ local win = Flux:Window("SakuraStand", "SecretHub", Color3.fromRGB(247, 0, 255 )
 local tab = win:Tab("main", "http://www.roblox.com/asset/?id=6023426915")
 
 _G.on = false
-tab:Toggle("Auto-Stand", "Automatically give stand aroud floor to you!", false, function(t)
+tab:Toggle("Stand", "Automatically give stand aroud floor to you!", false, function(t)
 if t then
 _G.on = true
 else
@@ -2853,45 +2853,7 @@ spawn(function()
         wait(1)
         end
         end
-    end)
-
-_G.on = false
-tab:Toggle("Auto-Money", "Automatically give money aroud floor to you!", false, function(t)
-if t then
-_G.on = true
-else
-_G.on = false
-end
-end)
-
-spawn(function()
-    while wait() do
-        if _G.on then           
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(906.119507, -58.5440445, 391.546967)
-wait(1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(856.783813, -58.5625801, 221.682434)
-wait(1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(852.361938, -58.7723427, 246.382095)
-wait(1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(901.981934, -56.2185402, 244.478775)
-wait(1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(962.629272, -58.7795029, 255.183594)
-wait(1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(880.115112, -58.7224808, 195.678391)
-wait(1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(895.456665, -58.5604973, 264.655762)
-wait(1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(927.032471, -53.6883163, 197.141525)
-wait(1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(862.843872, -54.8723106, 324.234894)
-wait(1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(941.739868, -58.6111069, 362.681549)
-wait(1)
-end
-end
-end)
-
-
+ end)
 
 tab:Slider("WalkSpeed","Make you fast if you walk", 0, 500, 15, function(t)
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = t
@@ -2900,6 +2862,7 @@ end)
 tab:Slider("JumpPower","Make jump power if you jump", 0, 500, 65, function(t)
    game.Players.LocalPlayer.Character.Humanoid.JumpPower = t
 end)
+
 
 
 tab:Button("Destroy", "Just destroys the gui, nothing else.", function()
