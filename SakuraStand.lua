@@ -2855,7 +2855,9 @@ spawn(function()
         end
  end)
 
-
+tab:Slider("Speed","Make fast Speed if you run", 0, 500, 65, function(t)
+   game.Players.LocalPlayer.Character.Humanoid.JumpPower = t
+end)
 
 tab:Slider("JumpPower","Make jump power if you jump", 0, 500, 65, function(t)
    game.Players.LocalPlayer.Character.Humanoid.JumpPower = t
